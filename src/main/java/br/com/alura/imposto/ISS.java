@@ -4,8 +4,9 @@ import br.com.alura.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
-public class ICMS {
-    public BigDecimal calcularICMS(Orcamento orcamento) {
-        return orcamento.getValor().multiply(new BigDecimal("0.1"));
+public class ISS implements TipoImposto {
+    @Override
+    public BigDecimal calcularImposto(Orcamento orcamento) {
+        return orcamento.getValor().multiply(new BigDecimal("0.06"));
     }
 }

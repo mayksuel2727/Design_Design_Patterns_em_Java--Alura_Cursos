@@ -1,10 +1,10 @@
-package br.com.alura.situacao;
+package br.com.alura.orcamento.situacao;
 
 import br.com.alura.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
-public class EmAnalise {
+public class EmAnalise extends SituacaoOrçamento{
     public BigDecimal calcularValorDescontoExtra(Orcamento orcamento) {
         return orcamento.getValor().multiply(new BigDecimal("0.05"));
     }
@@ -16,4 +16,5 @@ public class EmAnalise {
     public void reprovar(Orcamento orcamento) {
         orcamento.setSituacao(new Reprovado());
     }
+
 }

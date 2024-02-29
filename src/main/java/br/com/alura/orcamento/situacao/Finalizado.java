@@ -1,4 +1,8 @@
-package br.com.alura.situacao;
+package br.com.alura.orcamento.situacao;
 
-public class Finalizado {
+import br.com.alura.orcamento.Orcamento;
+
+import java.math.BigDecimal;
+
+public class Finalizado extends SituacaoOrçamento{
 }
